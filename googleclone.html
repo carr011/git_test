@@ -5,6 +5,34 @@
 <head>
 <style>
 
+.navBar {
+		text-align: right;
+		font-color: black;
+		font-family: arial, sans-serif;
+		font-size: 13px;
+		padding-right: 3px;
+}
+
+#grid {
+	height: 18px;
+	width: 18px;
+}
+
+#signIn {
+	background-color: #f8f8f8;
+	background-image: -moz-linear-gradient(top,#f8f8f8,#f1f1f1);
+	border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	font-color: #f7f8f9;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+
 .main {
 	text-align: center;
 	
@@ -32,11 +60,12 @@
 	
 }
 
-button {
+button.search {
 	background-color: #f8f8f8;
 	background-image: -moz-linear-gradient(top,#f8f8f8,#f1f1f1);
 	border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	padding: 10px;
     color: #222;
 	-moz-appearance;
 	
@@ -46,6 +75,12 @@ button {
 <title>Google Clone</title>
 
 <body>
+<div class="navBar">
+<a>Gmail</a> 
+<a style="padding-left:10px">Images</a>
+<a href=""><img id="grid" style="padding-left:10px; padding-right:10px" src="http://www.myiconfinder.com/uploads/iconsets/ed559f9ab4ee6cec08ffde71c58a68af-grid.png"></a>
+<button id="signIn" style="font-color: #f7f8f9">Sign In</button>
+</div>
 <div class="main">
 	<img id="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
 </div>
@@ -55,8 +90,8 @@ button {
 </div>
 <br>
 <div class="push">
-<button type="submit">Google Search</button>
-<button type="submit">I'm Feeling Lucky</button>
+<button class="search" type="submit">Google Search</button>
+<button class="search" type="submit">I'm Feeling Lucky</button>
 </div>
 
 </body>
